@@ -1,19 +1,21 @@
-#What is BitWasp
-BitWasp is an open source project which aims to lower the barrier for anyone to set up there own secure, anonymous marketplace. It is envisaged that BitWasp will be used on Tor hidden services. As such it is designed with speed in mind. This project will also eventually full integrate with BitCoin providing a secure escrow service for buyers and sellers. This project is still in its very early stages. There is a preliminary planning document at https://piratenpad.de/p/bitwasp-planning
+#What is AmpedMarket
+AmpedMarket is an open source project forked from BitWasp which aims to allow people to quickly set up . AmpedMarket is designed to be run as a Tor hidden service. As such it is developed with security and anonymity in mind. 
 
-If you can help or have any ideas please join us on http://www.thelaboratory.org
+This project is still in its very early stages. It is essentially BitWasp until it has been thoroughly document and verified, at which point changes will be made. Minor patches to existing components will be pushed back to BitWasp, however new/highly modified components will remain unique to this project (others can use the code in their own software if they wish). 
 
-#Installation and Configuration
-To set up BitWasp, first make ./application/config and ./assets/images writable.
+Use the wiki on github if you want to get involved in the development, or send an email to amphetamine@tormail.org
+
+#Installation and Configuration (At this stage identical to BitWasp)
+To set up AmpedMarket, first make ./application/config and ./assets/images writable.
 
 chmod 777 ./application/config
 chmod 777 -R ./assets/images
 
 And then visit the installer page to set up the marketplace.
 
-# Support Bitwasp Development
-All money from donations, supporter and sponsor accounts go to fund BitWasp Development & Operation. 
-Bitcoin Address: 19wXXScUGcpTUZUYo4kaevoLZKczE8G7q
+# Support AmpedMarket Development
+All money from donations go to fund AmpedMarket development. 
+Bitcoin Address: 14B1cC1gMHYbAAoGMMyfiYNJDBQpeMTUz1
 
-All help and contributions in getting Bitwasp completed are very much appreciated as the time of the lead developers is currently very limited.
+These contributions help out a great deal and allow for faster development with more thorough testing (which we take very seriously)
 
