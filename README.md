@@ -1,5 +1,5 @@
 #What is AmpedMarket
-AmpedMarket is an open source project forked from BitWasp which aims to allow people to quickly set up anonymous markets with integrated BitCoin management and . AmpedMarket is designed to be run as a Tor hidden service. As such it is developed with security and anonymity in mind.
+AmpedMarket is an open source project forked from BitWasp which aims to allow people to quickly set up anonymous markets with integrated BitCoin management and escrow services. AmpedMarket is designed to be run as a Tor hidden service. As such it is developed with security and anonymity in mind.
 
 This project is still in its very early stages. It is essentially BitWasp until it has been thoroughly document and verified, at which point changes will be made. Minor patches to existing components will be pushed back to BitWasp, however new/highly modified components will remain unique to this project (others can use the code in their own software if they wish). 
 
