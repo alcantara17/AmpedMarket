@@ -9,23 +9,39 @@ Use the wiki on github if you want to get involved in the development, or send a
 
 Even just testing on different configurations can be a big help.
 
-#Current High-priority Development Activities
+For a list of tasks related to AmpedMarket, please visit https://github.com/ampedup/AmpedMarket/wiki/Tasks
 
-- Reverse-engineer documentation from existing BitWasp structure
-- Convert all SQL queries to use base64 encoding instead of escaping to mitigate
-- Rewrite clean replacements to remove dependence on CodeIgniter code
+#Current High-priority Development Activities
+- Reverse Engineering Documentation From BitWasp Source 
+ - (https://github.com/ampedup/AmpedMarket/wiki/Task:-Reverse-Engineering-Documentation-From-BitWasp-Source)
+- Audit Security Of CodeIgniter Components
+ - (https://github.com/ampedup/AmpedMarket/wiki/Task:-Audit-Security-Of-CodeIgniter-Components)
+- Define Supported Development Environments
+ - (https://github.com/ampedup/AmpedMarket/wiki/Task:-Define-Supported-Development-Environments)
 
 #Security TODO List (don't use this software unless this list is empty!)
-- Replace SQL queries with ones that use base64 encoding to eliminate risk of SQL injection (escaping is NOT safe in the world of unicode)
-- Perform penetration testing at the application level
+- Audit Security Of CodeIgniter Components
+ - (https://github.com/ampedup/AmpedMarket/wiki/Task:-Audit-Security-Of-CodeIgniter-Components)
+- Implement Base64 Encoding Instead Of Escaping For String Data In SQL Drivers
+ - (https://github.com/ampedup/AmpedMarket/wiki/Task:-Implement-Base64-Encoding-Instead-Of-Escaping-For-String-Data-In-SQL-Drivers)
+- Audit Anti OCR Features Of CodeIgniter CAPTCHA Generation
+ - (https://github.com/ampedup/AmpedMarket/wiki/Task:-Audit-Anti-OCR-Features-Of-CodeIgniter-CAPTCHA-Generation)
+- Audit Security Of Bitwasp Components
+ - (https://github.com/ampedup/AmpedMarket/wiki/Task:-Audit-Security-Of-BitWasp-Components)
+- Define Penetration Testing Criteria
+ - (https://github.com/ampedup/AmpedMarket/wiki/Task:-Define-Penetration-Testing-Criteria)
 
 #Testing TODO List
-- Come up with a list of potential webserver configurations
-- Test multiple webserver configurations for security, reliability, penetration, denial-of-service, etc.
+- Define Supported Testing Environments
+ - (https://github.com/ampedup/AmpedMarket/wiki/Task:-Define-Supported-Testing-Environments)
+- Define Supported Production Environments
+ - (https://github.com/ampedup/AmpedMarket/wiki/Task:-Define-Supported-Production-Environments)
+- Define Penetration Testing Criteria
+ - (https://github.com/ampedup/AmpedMarket/wiki/Task:-Define-Penetration-Testing-Criteria)
 
-#Planned Features
-- Integrated PGP through javascript to ensure maximum security
-- Ability to link vendor information from other anonymous markets
+#Planned New Features
+- Extract Vendor Information From Third Party Marketplaces
+ - (https://github.com/ampedup/AmpedMarket/wiki/Feature:-Extract-Vendor-Information-From-Third-Party-Marketplaces)
 
 #Installation and Configuration (At this stage identical to BitWasp)
 To set up AmpedMarket, first make ./application/config and ./assets/images writable.
