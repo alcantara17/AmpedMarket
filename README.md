@@ -9,7 +9,7 @@ Use the wiki on github if you want to get involved in the development, or send a
 
 Even just testing on different configurations can be a big help.
 
-For a list of tasks related to AmpedMarket, please visit 
+For a list of tasks related to AmpedMarket, please visit https://github.com/ampedup/AmpedMarket/wiki/Tasks
 
 #Current High-priority Development Activities
 - Reverse Engineering Documentation From BitWasp Source 
