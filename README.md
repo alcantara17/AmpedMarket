@@ -3,6 +3,8 @@ AmpedMarket is an open source project forked from BitWasp which aims to allow pe
 
 This project is still in its very early stages. It is essentially BitWasp until it has been thoroughly document and verified, at which point changes will be made. Minor patches to existing components will be pushed back to BitWasp, however new/highly modified components will remain unique to this project (others can use the code in their own software if they wish). 
 
+Development supported by 58-08-2, 64-17-5, 1972-08-3 and of course 300-62-9 :D
+
 #Want To Get Involved?
 
 Use the wiki on github if you want to get involved in the development, or send an email to amphetamine@tormail.org
