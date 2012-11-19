@@ -228,11 +228,125 @@ Loads items for specified category if it exists and "paginates" the items, other
 
 
 \subsubsection{Listings}
-\subsubsection{Messages}
-\subsubsection{Orders}
-\subsubsection{Pages}
-\subsubsection{Users}
+\begin{description}
+\item[Description:] The class handles the management of listings in the marketplace. Extends CI\_Controller.
+\item[Attributes:] None.
+\item[Methods:] \textbf{ }
+\begin{description}
+\item[\_\_construct()]  \textbf{ }\\
+Constructor for the Listings object. Calls the parent constuctor and loads required the models and libraries.
+\item[edit(\$itemHash)]  \textbf{ }\\
+Loads data for the listings/editConfig page ("Edit Configuration") and loads the layout library.
+\item[manage()]  \textbf{ }\\
+Loads data for the listings/manage page ("Manage Listings") and loads the layout library.
+\item[images(\$itemHash)]  \textbf{ }\\
+Loads data for the listings/images page ("Item Images") and loads the layout library.
+\item[mainImage(\$imageHash)]  \textbf{ }\\
+Handles the selection of the main image for listings, loads the data for the result and loads the layout library.
+\item[imageRemove(\$imageHash)]  \textbf{ }\\
+Handles the removal of images for listings, loads the data for the result and loads the layout library.
+\item[imageUpload(\$itemHash)]  \textbf{ }\\
+Handles the upload of images for listings, loads the data for the result and loads the layout library.
+\item[remove(\$itemHash)]  \textbf{ }\\
+Handles the removal of items from vendor listings, loads the data for the result and loads the layout library.
+\item[create()]  \textbf{ }\\
+Loads data for the listings/addItem page ("Add Item") and loads the layout library.
+\end{description} 
+\end{description} 
 
+\subsubsection{Messages}
+\begin{description}
+\item[Description:] The class handles the management of user messages. Extends CI\_Controller.
+\item[Attributes:] None.
+\item[Methods:] \textbf{ }
+\begin{description}
+\item[\_\_construct()]  \textbf{ }\\
+Constructor for the Messages object. Calls the parent constuctor and loads required the models and libraries.
+\item[inbox()]  \textbf{ }\\
+Loads data for the messages/inbox page ("Inbox") and loads the layout library.
+\item[delete(\$messageHash)]  \textbf{ }\\
+Handles the deletion of messages, loads the data for the result and loads the layout library.
+\item[read(\$messageHash)]  \textbf{ }\\
+Loads data for the specified message for the messages/read page and loads the layout library.
+\item[remove(\$itemHash)]  \textbf{ }\\
+Handles the removal of items from vendor listings, loads the data for the result and loads the layout library.
+\item[send(\$toHash = NULL)]  \textbf{ }\\
+Loads data for the messages/send page ("Send Message"), handles message sending and loads the layout library.
+\end{description} 
+\end{description} 
+
+\subsubsection{Orders}
+\begin{description}
+\item[Description:] The class handles the management of orders. Extends CI\_Controller.
+\item[Attributes:] None.
+\item[Methods:] \textbf{ }
+\begin{description}
+\item[\_\_construct()]  \textbf{ }\\
+Constructor for the Orders object. Calls the parent constuctor and loads required the models and libraries.
+\item[index()]  \textbf{ }\\
+Loads data for the orders/index page ("Orders") and loads the layout library.
+\item[recount()]  \textbf{ }\\
+Handles the update of order quantities, loads the data for the result and loads the layout library.
+\item[orderItem(\$itemHash)]  \textbf{ }\\
+Handles the creation of a new order for the specified item, loads the data for the result and loads the layout library.
+\item[place(\$sellerHash)]  \textbf{ }\\
+Handles the placement of orders with vendors, loads the data for the result and loads the layout library.
+\item[review(\$id)]  \textbf{ }\\
+Handles the placement of feedback on orders, loads the data for the result and loads the layout library.
+\item[confirmDispatch(\$buyerHash)]  \textbf{ }\\
+Handles the update of dispatch status on orders, loads the data for the result and loads the layout library.
+\item[confirmPayment(\$buyerHash)]  \textbf{ }\\
+Handles the payment confirmation on orders, loads the data for the result and loads the layout library.
+\item[purchases()]  \textbf{ }\\
+Loads data for the orders/purchases page ("Purchases") and loads the layout library.
+\item[callback\_check\_rating(\$param)]  \textbf{ }\\
+\textbf{Method does not follow naming conventions!} Checks whether the feedback value provided is within the specified range (1-5 inclusive).
+\end{description} 
+\end{description} 
+
+\subsubsection{Pages}
+\begin{description}
+\item[Description:] The class handles display of the custom pages. Extends CI\_Controller.
+\item[Attributes:] None.
+\item[Methods:] \textbf{ }
+\begin{description}
+\item[\_\_construct()]  \textbf{ }\\
+Constructor for the Pages object. Calls the parent constuctor.
+\item[view(\$page = 'home')]  \textbf{ }\\
+Loads data for the specified page and loads the layout library.
+\end{description} 
+\end{description} 
+
+\subsubsection{Users}
+\begin{description}
+\item[Description:] The class handles the user management interface. Extends CI\_Controller.
+\item[Attributes:] None.
+\item[Methods:] \textbf{ }
+\begin{description}
+\item[\_\_construct()]  \textbf{ }\\
+Constructor for the Users object. Calls the parent constuctor and loads required the models and libraries.
+\item[registerPGP()]  \textbf{ }\\
+Loads data for the users/registerPGP page ("Setup PGP"), handles PGP key registration and loads the layout library.
+\item[twoStep()]  \textbf{ }\\
+Loads data for the users/twoStep page ("Two Step Authentication"), handles verification of the two step authentication and loads the layout library.
+\item[logoutInactivity()]  \textbf{ }\\
+Loads data for the users/login page ("Login"), notifies the user that the previous session has timed out, and loads the layout library.
+\item[view(\$userHash)]  \textbf{ }\\
+Loads data for the users/individual page for the specified user and loads the layout library.
+\item[login()]  \textbf{ }\\
+Loads data for the users/login page ("Login"), handles user credential and CAPTCHA authentication and loads the layout library.
+\item[logout()]  \textbf{ }\\
+Logs out the user and redirects them to the users/login page.
+\item[register()]  \textbf{ }\\
+Loads data for the users/register page ("Register"), handles user registration and CAPTCHA authentication and loads the layout library.
+\item[find\_role(\$roleId)]  \textbf{ }\\
+\textbf{Method does not follow naming conventions!} Resolves the role ID to a string "Vendor" or "Buyer".
+\item[check\_captcha(\$string)]  \textbf{ }\\
+\textbf{Method does not follow naming conventions!} Checks the validity of the CAPTCHA answer.
+\item[register\_check\_role(\$role)]  \textbf{ }\\
+\textbf{Method does not follow naming conventions!} Checks whether the role value provided is within the specified range (1-2 inclusive).
+\end{description} 
+\end{description} 
 
 \subsection{Libraries}
 \subsubsection{General}
