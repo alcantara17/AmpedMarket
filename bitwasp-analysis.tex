@@ -127,6 +127,8 @@ Handles updating of the account information.
 Delete the stored pubKey for the user, and disable two-step authentication if necessary.
 \end{description} 
 \end{description} 
+
+
 \subsubsection{Admin}
 \begin{description}
 \item[Description:] The class handles the Admin management interface. Extends CI\_Controller.
@@ -155,10 +157,76 @@ Loads data for the admin/addCategory page ("Add Category"), handles category add
 \textbf{Method does not follow naming conventions!} Checks that the category identified by \$id exists.
 \end{description} 
 \end{description} 
+
+
 \subsubsection{Bitcoin}
+\begin{description}
+\item[Description:] The class handles the Bitcoin management interface. It is in its very early stages. Extends CI\_Controller.
+\item[Attributes:] None.
+\item[Methods:] \textbf{ }
+\begin{description}
+\item[\_\_construct()]  \textbf{ }\\
+Constructor for the Account object. Calls the parent constuctor and loads required the model.
+\item[index()]  \textbf{ }\\
+Loads some test data using a JSON interface to a hardcoded bitcoin server using hardcoded credentials and loads the layout library.
+\end{description} 
+\end{description} 
+
+
 \subsubsection{Error}
+\begin{description}
+\item[Description:] The class handles displaying of errors. Extends CI\_Controller.
+\item[Attributes:] \textbf{ }
+\begin{description}
+\item[\$params]  \textbf{ }\\
+Array instance variable not actually used in the code.
+\end{description}
+\item[Methods:] \textbf{ }
+\begin{description}
+\item[\_\_construct()]  \textbf{ }\\
+Empty constructor.
+\item[index(\$params)]  \textbf{ }\\
+Loads data pertaining to the error and displays the error.
+\end{description} 
+\end{description} 
+
+
 \subsubsection{Home}
+\begin{description}
+\item[Description:] The class handles display of the home page. Extends CI\_Controller.
+\item[Attributes:] None.
+\item[Methods:] \textbf{ }
+\begin{description}
+\item[\_\_construct()]  \textbf{ }\\
+Constructor for the Home object. Calls the parent constuctor.
+\item[index()]  \textbf{ }\\
+Loads data for the home/index page ("Home") and loads the layout library.
+\end{description} 
+\end{description} 
+
+
 \subsubsection{Items}
+\begin{description}
+\item[Description:] The class handles the display of items in the marketplace. Extends CI\_Controller.
+\item[Attributes:] None.
+\item[Methods:] \textbf{ }
+\begin{description}
+\item[\_\_construct()]  \textbf{ }\\
+Constructor for the Items object. Calls the parent constuctor and loads required the models and libraries.
+\item[tmp\_items\_per\_page()]  \textbf{ }\\
+\textbf{Method does not follow naming conventions!} Handles the changing of items shown per page for the session.
+\item[index()]  \textbf{ }\\
+Loads data for the items/index page ("Items"), "paginates" the lastest items and loads the layout library.
+\item[view(\$itemHash)]  \textbf{ }\\
+Loads data specified item and displays it if it exists, otherwise it  "paginates" the lastest items loads the layout library. Display of user feedback is commented out.
+\item[cat(\$catID = FALSE)]  \textbf{ }\\
+Loads items for specified category if it exists and "paginates" the items, otherwise it "paginates" the latest items and loads the layout library.
+\item[check\_category\_exists(\$id)]  \textbf{ }\\
+\textbf{Method does not follow naming conventions!} Checks whether or not the specified category exists.
+\end{description} 
+\end{description} 
+
+
 \subsubsection{Listings}
 \subsubsection{Messages}
 \subsubsection{Orders}
