@@ -89,6 +89,7 @@ The structure analysis of the software has been done using Visual Paradigm to ex
 \section{Path Structure}
 \subsection{Application (application/)}
 \subsubsection*{config}
+\textbf{} \\
 \subsubsection*{controllers}
 \subsubsection*{errors}
 \subsubsection*{language}
@@ -106,41 +107,87 @@ The structure analysis of the software has been done using Visual Paradigm to ex
 
 \section{Class Structure}
 \subsection{Controllers}
-\subsubsection*{Account}
-\subsubsection*{Admin}
-\subsubsection*{Bitcoin}
-\subsubsection*{Error}
-\subsubsection*{Home}
-\subsubsection*{Items}
-\subsubsection*{Listings}
-\subsubsection*{Messages}
-\subsubsection*{Orders}
-\subsubsection*{Pages}
-\subsubsection*{Users}
+\subsubsection{Account}
+\begin{description}
+\item[Description:] The class handles the Account management interface. Extends CI\_Controller.
+\item[Attributes:] None.
+\item[Methods:] \textbf{ }
+\begin{description}
+\item[\_\_construct()]  \textbf{ }\\
+Constructor for the Account object. Calls the parent constuctor and loads required libraries and models.
+\item[index()]  \textbf{ }\\
+Loads data for the account/index page ("My Account") and loads the layout library.
+\item[edit()]  \textbf{ }\\
+Loads data for the account/edit page ("Edit Account") and loads the layout library.
+\item[replacePGP()]  \textbf{ }\\
+Loads data for the account/replacePGP page ("Replace PGP key"), handles the updating of PGP keys and loads the layout library.
+\item[update()]  \textbf{ } \\
+Handles updating of the account information.
+\item[deletePubKey()]  \textbf{ }\\
+Delete the stored pubKey for the user, and disable two-step authentication if necessary.
+\end{description} 
+\end{description} 
+\subsubsection{Admin}
+\begin{description}
+\item[Description:] The class handles the Admin management interface. Extends CI\_Controller.
+\item[Attributes:] None.
+\item[Methods:] \textbf{ }
+\begin{description}
+\item[\_\_construct()]  \textbf{ }\\
+Constructor for the Account object. Calls the parent constuctor and loads required the model.
+\item[index()]  \textbf{ }\\
+Loads data for the admin/siteConfig page ("Admin Panel") and loads the layout library.
+\item[users(\$userHash = NULL)]  \textbf{ }\\
+Loads data for the admin/users page ("Users") and loads the layout library.
+\item[editConfig()]  \textbf{ }\\
+Loads data for the admin/editConfig page ("Edit Configuration") and loads the layout library.
+\item[updateConfig()]  \textbf{ }\\
+Handles updating of the site configuration.
+\item[fixOrphans()]  \textbf{ }\\
+Handles the removal of orphan categories.
+\item[removeCategory()]  \textbf{ }\\
+Loads data for the admin/removeCategory page ("Remove Category"), handles category removal and loads the layout library.
+\item[addCategory()]  \textbf{ }\\
+Loads data for the admin/addCategory page ("Add Category"), handles category addition and loads the layout library.
+\item[check\_parentID\_exists(\$parentID)]  \textbf{ }\\
+\textbf{Method does not follow naming conventions!} Checks that the category identified by \$parentID has a parent that exists.
+\item[check\_category\_exists(\$id)]  \textbf{ }\\
+\textbf{Method does not follow naming conventions!} Checks that the category identified by \$id exists.
+\end{description} 
+\end{description} 
+\subsubsection{Bitcoin}
+\subsubsection{Error}
+\subsubsection{Home}
+\subsubsection{Items}
+\subsubsection{Listings}
+\subsubsection{Messages}
+\subsubsection{Orders}
+\subsubsection{Pages}
+\subsubsection{Users}
 
 
 \subsection{Libraries}
-\subsubsection*{General}
-\subsubsection*{jsonRPCClient}
-\subsubsection*{Layout}
-\subsubsection*{My_captcha}
-\subsubsection*{My_config}
-\subsubsection*{My_image}
-\subsubsection*{My_session}
+\subsubsection{General}
+\subsubsection{jsonRPCClient}
+\subsubsection{Layout}
+\subsubsection{My\_captcha}
+\subsubsection{My\_config}
+\subsubsection{My\_image}
+\subsubsection{My\_session}
 
 
 \subsection{Models}
-\subsubsection*{Accounts_model}
-\subsubsection*{Admin}
-\subsubsection*{Bitcoin}
-\subsubsection*{Error}
-\subsubsection*{Home}
-\subsubsection*{Items}
-\subsubsection*{Account}
-\subsubsection*{Admin}
-\subsubsection*{Bitcoin}
-\subsubsection*{Error}
-\subsubsection*{Home}
-\subsubsection*{Items}
+\subsubsection{Accounts\_model}
+\subsubsection{Admin}
+\subsubsection{Bitcoin}
+\subsubsection{Error}
+\subsubsection{Home}
+\subsubsection{Items}
+\subsubsection{Account}
+\subsubsection{Admin}
+\subsubsection{Bitcoin}
+\subsubsection{Error}
+\subsubsection{Home}
+\subsubsection{Items}
 
 \end{document}
