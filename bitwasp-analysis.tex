@@ -530,12 +530,130 @@ Loads data for the users/register page ("Register"), handles user registration a
 
 \subsection{Libraries}
 \subsubsection{General}
+\begin{description}
+\item[Description:] The class contains miscellaneous functions used in BitWasp.
+\item[Attributes:] None.
+\item[Methods:] \textbf{ }
+\begin{description}
+\item[importPGPkey(\$ascii)]  \textbf{ }\\
+Imports a PGP key defined by \$ascii.
+\item[initPGP()]  \textbf{ }\\
+Initializes GnuPG.
+\item[encryptPGPmessage(\$fingerprint,\$messageText)]  \textbf{ }\\
+Encrypts a message containing \$messageText using the key identified by \$fingerprint using GnuPG.
+\item[getAuthLevel(\$URI)]  \textbf{ }\\
+Determines the required authorization for a page based on first URI segment.
+\item[generateSalt()]  \textbf{ }\\
+Generates a salt for encryption.
+\item[hashFunction(\$pass,\$salt)]  \textbf{ }\\
+Hashes a string with a salt.
+\item[randHash()]  \textbf{ }\\
+Generates an identifying hash for users, items, etc.
+\item[uniqueHash(\$table, \$column)]  \textbf{ }\\
+Generates a unique hash for the specified table/column.
+\item[currentURI()]  \textbf{ }\\
+Returns the current URI broken up by "/" in an array.
+\item[displayTime(\$timestamp)]  \textbf{ }\\
+Formats time into a readable format.
+\end{description} 
+\end{description} 
+
 \subsubsection{jsonRPCClient}
+\textbf{Class does not follow naming conventions!}\\
+\begin{description}
+\item[Description:] The class provides a generic jsonRPC 1.0 client. It is part of JSON-RPC PHP.
+\item[Attributes:] \textbf{ }
+\begin{description}
+\item[\$debug]  \textbf{ }\\
+Boolean. Debug state.
+\item[\$url]  \textbf{ }\\
+String. The server URL.
+\item[\$id]  \textbf{ }\\
+Integer. The request ID.
+\item[\$notification]  \textbf{ }\\
+Boolean. If true, notifications are performed instead of requests.
+\end{description}
+\item[Methods:] \textbf{ }
+\begin{description}
+\item[\_\_construct(\$params)]  \textbf{ }\\
+Constructor for the jsonRPCClient class, takes connection parameters and configures the object accordingly.
+\item[setRPCNotification(\$notification)]  \textbf{ }\\
+Sets the notification state of the object.
+\item[\_\_call(\$method,\$params)]  \textbf{ }\\
+Performs a jsonRCP request and gets the results as an array.
+\end{description} 
+\end{description} 
+
 \subsubsection{Layout}
+\begin{description}
+\item[Description:] The class handles page layout.
+\item[Attributes:] None.
+\item[Methods:] \textbf{ }
+\begin{description}
+\item[\_\_construct()]  \textbf{ }\\
+Constructor for the Layout object. Loads common layout data.
+\item[createMenu(\$categories, \$level, \$params)]  \textbf{ }\\
+Outputs the categories as an ordered list.
+\end{description} 
+\end{description} 
+
 \subsubsection{My\_captcha}
+\textbf{Class does not follow naming conventions!}\\
+\begin{description}
+\item[Description:] The class handles CAPTCHA creation and validation.
+\item[Attributes:] None.
+\item[Methods:] \textbf{ }
+\begin{description}
+\item[\_\_construct()]  \textbf{ }\\
+Constructor for the My\_captcha object. Deletes CAPTCHAs over 2 hours old and loads the My\_image library.
+\item[checkCode(\$code)]  \textbf{ }\\
+Checks that the submission is correct.
+\item[generateCaptcha(\$length='5')]  \textbf{ }\\
+Generates a CAPTCHA.
+\end{description} 
+\end{description} 
+
 \subsubsection{My\_config}
+\textbf{Class does not follow naming conventions!}\\
+\begin{description}
+\item[Description:] The class handles display of the custom pages. Extends CI\_Controller.
+\item[Attributes:] None.
+\item[Methods:] \textbf{ }
+\begin{description}
+\item[\_\_construct()]  \textbf{ }\\
+Constructor for the Pages object. Calls the parent constuctor.
+\item[view(\$page = 'home')]  \textbf{ }\\
+Loads data for the specified page and loads the layout library.
+\end{description} 
+\end{description} 
+
 \subsubsection{My\_image}
+\textbf{Class does not follow naming conventions!}\\
+\begin{description}
+\item[Description:] The class handles display of the custom pages. Extends CI\_Controller.
+\item[Attributes:] None.
+\item[Methods:] \textbf{ }
+\begin{description}
+\item[\_\_construct()]  \textbf{ }\\
+Constructor for the Pages object. Calls the parent constuctor.
+\item[view(\$page = 'home')]  \textbf{ }\\
+Loads data for the specified page and loads the layout library.
+\end{description} 
+\end{description} 
+
 \subsubsection{My\_session}
+\textbf{Class does not follow naming conventions!}\\
+\begin{description}
+\item[Description:] The class handles display of the custom pages. Extends CI\_Controller.
+\item[Attributes:] None.
+\item[Methods:] \textbf{ }
+\begin{description}
+\item[\_\_construct()]  \textbf{ }\\
+Constructor for the Pages object. Calls the parent constuctor.
+\item[view(\$page = 'home')]  \textbf{ }\\
+Loads data for the specified page and loads the layout library.
+\end{description} 
+\end{description} 
 
 
 \subsection{Models}
