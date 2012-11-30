@@ -95,21 +95,194 @@ Tabs are used for indentation, not spaces.
 
 \section{Path Structure}
 \subsection{Application (application/)}
-\subsubsection*{config}
-\textbf{} \\
-\subsubsection*{controllers}
-\subsubsection*{errors}
-\subsubsection*{language}
-\subsubsection*{libraries}
-\subsubsection*{models}
-\subsubsection*{views}
+\begin{description}
+\item[Description:] Contains the bulk of the BitWasp web application code.
+\item[Files:] \textbf{ }
+\begin{description}
+\item[index.html]  \textbf{ }\\
+HTML file to prevent directory browsing.
+\end{description} 
+\end{description} 
+
+\subsubsection{application/config/}
+\begin{description}
+\item[Description:] Contains application configuration data for CodeIgniter based applications.
+\item[Files:] \textbf{ }
+\begin{description}
+\item[autoload.php]  \textbf{ }\\
+Specifies which systems should be loaded by default.
+\item[config.php]  \textbf{ }\\
+Contains configuration settings for the BitWasp installation, such as Bitcoin configuration, etc.
+\item[constants.php]  \textbf{ }\\
+Contains definitions of constant values.
+\item[doctypes.php]  \textbf{ }\\
+Contains an array for DOCTYPE definitions.
+\item[foreign\_chars.php]  \textbf{ }\\
+Contains an array of foreign characters for transliteration conversion used by the Text helper.
+\item[form\_validation.php]  \textbf{ }\\
+Contains definitions for data sanitization from sent form data.
+\item[hooks.php]  \textbf{ }\\
+Lets you define "hooks" to extend CI without hacking the core files. Unused in BitWasp.
+\item[index.html]  \textbf{ }\\
+HTML file to prevent directory browsing.
+\item[migration.php]  \textbf{ }\\
+Contains data for schema migrations. Disabled by default and not used in BitWasp.
+\item[mimes.php]  \textbf{ }\\
+Contains an array of MIME types to help identify allowed file types.
+\item[profiler.php]  \textbf{ }\\
+Configures whether or not the Profiler data is shown when enabled. Unused in BitWasp.
+\item[routes.php]  \textbf{ }\\
+Contains URL mappings to specific controller functions.
+\item[smileys.php]  \textbf{ }\\
+Contains an array of smileys for converting smiley text to images.
+\item[user\_agents.php]  \textbf{ }\\
+Contains arrays of user agent data to assist in identifying connected clients' platforms and browsers.
+\end{description} 
+\end{description} 
+
+\subsubsection{application/controllers/}
+\begin{description}
+\item[Description:] Contains the PHP files for the controller classes.
+\item[Files:] \textbf{ }
+\begin{description}
+\item[account.php]  \textbf{ }\\
+Contains code for the Account class.
+\item[admin.php]  \textbf{ }\\
+Contains code for the Admin class.
+\item[bitcoin.php]  \textbf{ }\\
+Contains code for the Bitcoin class.
+\item[error.php]  \textbf{ }\\
+Contains code for the Error class.
+\item[home.php]  \textbf{ }\\
+Contains code for the Home class.
+\item[index.html]  \textbf{ }\\
+HTML file to prevent directory browsing.
+\item[items.php]  \textbf{ }\\
+Contains code for the Items class.
+\item[listings.php]  \textbf{ }\\
+Contains code for the Listings class.
+\item[messages.php]  \textbf{ }\\
+Contains code for the Messages class.
+\item[orders.php]  \textbf{ }\\
+Contains code for the Orders class.
+\item[pages.php]  \textbf{ }\\
+Contains code for the Pages class.
+\item[users.php]  \textbf{ }\\
+Contains code for the Users class.
+\end{description} 
+\end{description} 
+
+\subsubsection{application/errors/}
+\begin{description}
+\item[Description:] Contains HTML to be displayed for various HTTP error codes.
+\item[Files:] \textbf{ }
+\begin{description}
+\item[file1]  \textbf{ }\\
+\item[file2]  \textbf{ }\\
+\end{description} 
+\end{description} 
+
+\subsubsection{application/language/english}
+\begin{description}
+\item[Description:] Contains the translation data for English.
+\item[Files:] \textbf{ }
+\begin{description}
+\item[form\_validation\_lang.php]  \textbf{ }\\
+\item[index.html]  \textbf{ }\\
+\end{description} 
+\end{description} 
+
+\subsubsection{application/libraries/}
+\begin{description}
+\item[Description:] Contains library classes of the BitWasp application.
+\item[Files:] \textbf{ }
+\begin{description}
+\item[file1]  \textbf{ }\\
+\item[file2]  \textbf{ }\\
+\end{description} 
+\end{description} 
+
+\subsubsection{application/models/}
+\begin{description}
+\item[Description:] Contains the Model definition data for BitWasp objects.
+\item[Files:] \textbf{ }
+\begin{description}
+\item[file1]  \textbf{ }\\
+\item[file2]  \textbf{ }\\
+\end{description} 
+\end{description} 
+
+\subsubsection{application/views/}
+\begin{description}
+\item[Description:] Contains layout data for pages of BitWasp.
+\item[Files:] \textbf{ }
+\begin{description}
+\item[file1]  \textbf{ }\\
+\item[file2]  \textbf{ }\\
+\end{description} 
+\end{description} 
+
 \subsection{System (system/)}
-\subsubsection*{core}
-\subsubsection*{database}
-\subsubsection*{helpers}
-\subsubsection*{language}
-\subsubsection*{libraries}
+\subsubsection{core}
+\begin{description}
+\item[Description:] Contains the .
+\item[Files:] \textbf{ }
+\begin{description}
+\item[file1]  \textbf{ }\\
+\item[file2]  \textbf{ }\\
+\end{description} 
+\end{description} 
+
+\subsubsection{database}
+\begin{description}
+\item[Description:] TBD.
+\item[Files:] \textbf{ }
+\begin{description}
+\item[file1]  \textbf{ }\\
+\item[file2]  \textbf{ }\\
+\end{description} 
+\end{description} 
+
+\subsubsection{helpers}
+\begin{description}
+\item[Description:] TBD.
+\item[Files:] \textbf{ }
+\begin{description}
+\item[file1]  \textbf{ }\\
+\item[file2]  \textbf{ }\\
+\end{description} 
+\end{description} 
+
+\subsubsection{language}
+\begin{description}
+\item[Description:] TBD.
+\item[Files:] \textbf{ }
+\begin{description}
+\item[file1]  \textbf{ }\\
+\item[file2]  \textbf{ }\\
+\end{description} 
+\end{description} 
+
+\subsubsection{libraries}
+\begin{description}
+\item[Description:] TBD.
+\item[Files:] \textbf{ }
+\begin{description}
+\item[file1]  \textbf{ }\\
+\item[file2]  \textbf{ }\\
+\end{description} 
+\end{description} 
+
 \subsection{Root directory (/)}
+\begin{description}
+\item[Description:] TBD.
+\item[Files:] \textbf{ }
+\begin{description}
+\item[file1]  \textbf{ }\\
+\item[file2]  \textbf{ }\\
+\end{description} 
+\end{description} 
+
 \newpage
 
 \section{Class Structure}
