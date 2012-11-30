@@ -1,6 +1,5 @@
-
 <?php
-
+if ( ! defined('BASEPATH')) exit('No direct script access allowed'); 
 class My_session extends CI_Session {
 
 	public function checkAuth(){
